@@ -61,7 +61,7 @@
     "redux-devtools-extension": "^2.13.7",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
-    "rimble-ui": "^0.2.0",
+    "rimble-ui": "git://github.com/ConsenSys/rimble-ui.git#ge-toastmessage-component",
     "sha3": "^2.0.0",
     "styled-components": "^4.1.3"
   },

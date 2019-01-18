@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Button } from 'rimble-ui'
+import { Box, Flex, Button, ToastMessage } from 'rimble-ui'
 
 /*
 You know you've correctly set up your environment if your simple storage contract is working - you should be able to set and get the value in your smart contract. If not, somethings not right
@@ -44,11 +44,22 @@ class SimpleStorage extends Component {
         {
         error ?
           <h1>Oh no! Something went wrong: {error}</h1> :
-          <div>
+          <Box >
             <h1>The number stored in your smart contract is: <br /> {value} </h1>
-            <Button size={'medium'} onClick={this.addOne}>Add One</Button>
+            <Button size={'medium'} onClick={this.addOne} mr={4}>Add One</Button>
             <Button size={'medium'} onClick={this.getNumber}>Get Number</Button>
-          </div>
+
+            <ToastMessage.Container>
+              <ToastMessage.Success
+                my={3}
+                message={'Payment Confirmed'}
+                secondaryMessage={'6efd...5909'}
+                actionText={'View Details'}
+                maxWdith={'auto'}
+                style={{maxWidth:'auto'}}
+              />
+            </ToastMessage.Container>
+          </Box>
         }
       </div>
     )
