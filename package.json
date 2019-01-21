@@ -49,6 +49,7 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "assist": "git+https://git@github.com/blocknative/assist.git",
     "dotenv": "^2.0.0",
     "node-sass": "^3.13.1",
     "react": "^16.0.0",

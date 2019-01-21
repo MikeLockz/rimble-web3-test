@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Box, Flex, Button, ToastMessage } from 'rimble-ui'
+import Assist from 'assist'
 
 /*
 You know you've correctly set up your environment if your simple storage contract is working - you should be able to set and get the value in your smart contract. If not, somethings not right
